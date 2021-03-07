@@ -1,0 +1,7 @@
+{
+  "name": "HiCovidApp",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
