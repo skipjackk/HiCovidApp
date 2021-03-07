@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Add Victim</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-card>
+    <form>
+      <ion-list>
+        <ion-item>
+          <ion-label>Full Name</ion-label>
+          <ion-input required type="text" name="fullname" [(ngModel)]="fullname"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label>Age</ion-label>
+          <ion-input required type="text" name="age" [(ngModel)]="age"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label>Address</ion-label>
+          <ion-textarea required type="text" name="address" [(ngModel)]="address" rows="4" cols="20"></ion-textarea>
+        </ion-item>
+        <ion-item>
+          <ion-label>Photo</ion-label>
+          <ion-input required type="text" name="photo" [(ngModel)]="photo"></ion-input>
+        </ion-item>
+      </ion-list>
+    </form>
+  </ion-card>
+</ion-content>

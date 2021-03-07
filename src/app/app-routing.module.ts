@@ -29,6 +29,14 @@ const routes: Routes = [
     path: '**',
     loadChildren: () => import('./page-not-found/page-not-found.module').then( m => m.PageNotFoundPageModule)
   },
+  {
+    path: 'add',
+    loadChildren: () => import('./list-add/list-add.module').then( m => m.ListAddPageModule)
+  },
+  {
+    path: 'edit/:todoId',
+    loadChildren: () => import('./list-edit/list-edit.module').then( m => m.ListEditPageModule)
+  },
 ];
 
 @NgModule({
