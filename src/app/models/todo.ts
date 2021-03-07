@@ -5,7 +5,7 @@ export interface Todo {
     address: string;
     photo: string;
     gender: string;
-    location: string;
+    // location: string;
     dateSick: string;
     status: string;
     createdAt: number;

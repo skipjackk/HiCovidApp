@@ -25,10 +25,10 @@ const routes: Routes = [
     path: 'forgot-password',
     loadChildren: () => import('./forgot-password/forgot-password.module').then( m => m.ForgotPasswordPageModule)
   },
-  {
-    path: '**',
-    loadChildren: () => import('./page-not-found/page-not-found.module').then( m => m.PageNotFoundPageModule)
-  },
+  // {
+  //   path: '**',
+  //   loadChildren: () => import('./page-not-found/page-not-found.module').then( m => m.PageNotFoundPageModule)
+  // },
   {
     path: 'add',
     loadChildren: () => import('./list-add/list-add.module').then( m => m.ListAddPageModule)
